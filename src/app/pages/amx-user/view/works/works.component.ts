@@ -33,19 +33,19 @@ export class WorksComponent implements OnInit {
 
 const data = [
   {
-    srcUrl: './../../../../../assets/img/door_map_2.jpg',
-    previewUrl: './../../../../../assets/img/door_map_2.jpg'
+    srcUrl: '/assets/img/door_map_2.jpg',
+    previewUrl: '/assets/img/door_map_2.jpg'
   },
   {
-    srcUrl: './../../../../../assets/img/hummer.jpg',
-    previewUrl: './../../../../../assets/img/hummer.jpg'
+    srcUrl: '/assets/img/hummer.jpg',
+    previewUrl: '/assets/img/hummer.jpg'
   },
   {
-    srcUrl: './../../../../../assets/img/battery.jpg',
-    previewUrl: './../../../../../assets/img/battery.jpg'
+    srcUrl: '/assets/img/battery.jpg',
+    previewUrl: '/assets/img/battery.jpg'
   },
   {
-    srcUrl: './../../../../../assets/img/v-ch.jpg',
-    previewUrl: './../../../../../assets/img/v-ch.jpg'
+    srcUrl: '/assets/img/v-ch.jpg',
+    previewUrl: '/assets/img/v-ch.jpg'
   }
 ];
