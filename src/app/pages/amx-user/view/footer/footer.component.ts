@@ -9,6 +9,7 @@ import {TOP_MENU} from './../../menu-items.config';
 export class FooterComponent implements OnInit {
 
   menu = TOP_MENU;
+  year = new Date().getFullYear();
 
   constructor() { }
 

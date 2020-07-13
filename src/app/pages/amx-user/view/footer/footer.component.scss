@@ -10,7 +10,7 @@
   align-items: center;
   padding: var(--offset) var(--offset);
   width: 100%;
-  height: calc(var(--offset) * 20);
+  height: calc(var(--offset) * 10);
   background-color: var(--menu-background-color);
 
   //box-shadow: 0 -8px 16px rgba(75, 75, 75, 0.2);
@@ -18,9 +18,12 @@
   margin-top: calc(var(--offset) * 4);
 
   &__block {
-
-
     display: flex;
+  }
+
+  &__copyright {
+    color: var(--color);
+    font-size: var(--font-size);
   }
 
   &__link {
