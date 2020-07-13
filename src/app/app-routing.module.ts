@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import {LazyRoutePreloadingStrategy} from './artyflex-core/providers/lazy-route.preloading.strategy';
+import {LazyRoutePreloadingStrategy} from '@core/providers/lazy-route.preloading.strategy';
 
 const routes: Routes = [
   {
@@ -18,7 +18,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    useHash: true,
+    useHash: false,
     preloadingStrategy: LazyRoutePreloadingStrategy
   })],
   exports: [RouterModule],
