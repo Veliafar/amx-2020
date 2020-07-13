@@ -16,5 +16,6 @@
 .container {
   img {
     margin: calc(var(--offset)*2);
+    border-radius: var(--border-radius);
   }
 }
