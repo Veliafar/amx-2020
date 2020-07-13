@@ -12,6 +12,8 @@ import {
 import {WrapperComponent} from './components/wrapper/wrapper.component';
 import {RouterModule} from '@angular/router';
 import {AmxUserRoutes} from './amx-user-routing.module';
+import {LightboxModule} from '@ngx-gallery/lightbox';
+import {GalleryModule} from '@ngx-gallery/core';
 
 
 @NgModule({
@@ -31,6 +33,10 @@ import {AmxUserRoutes} from './amx-user-routing.module';
   imports: [
     CommonModule,
     RouterModule.forChild(AmxUserRoutes),
+    GalleryModule,
+    LightboxModule.withConfig({
+      panelClass: 'fullscreen'
+    })
   ]
 })
 export class AmxUserModule {

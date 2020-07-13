@@ -4,6 +4,15 @@
     <div class="amx-logo">
     </div>
     <div class="amx-main-text">
+
+      <div class="amx-works">
+        <p class="container">
+          <img class="amx-works__work" *ngFor="let item of items; index as i"
+               [lightbox]="i"
+               [src]="item.data.thumb">
+        </p>
+      </div>
+
       <p>
         AutoMehanix – это московская студия автозвука с существенным опытом по созданию систем,
         которые будут радовать вас качественным звуком долгое время.

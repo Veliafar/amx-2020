@@ -1,5 +1,17 @@
+<link rel="stylesheet" href="../price/price.component.scss">
 <div class="amx-main">
+
   <div class="amx-main__content">
+
+    <div class="amx-works">
+      <p class="amx-works__header">Все работы смотрите в инстаграмме</p>
+
+      <p class="container">
+        <img class="amx-works__work" *ngFor="let item of items; index as i"
+             [lightbox]="i"
+             [src]="item.data.thumb">
+      </p>
+    </div>
 
   </div>
 </div>

@@ -15,7 +15,7 @@
   height: 6em;
 
   margin-top: calc(var(--offset) * 4);
-  margin-bottom: calc(var(--offset) * 4);
+  margin-bottom: calc(var(--offset) * 2);
 }
 
 .amx-main-text {
@@ -25,5 +25,14 @@
     &:not(:last-child) {
       margin-bottom: calc(var(--offset) * 4);
     }
+  }
+}
+
+.amx-works {
+  margin-top: 0;
+  &__work {
+    width: calc(var(--offset) * 20);
+    height: calc(var(--offset) * 20);
+    background-size: cover;
   }
 }

@@ -1,0 +1,20 @@
+.amx-works {
+
+  margin-top: calc(var(--offset)*4);
+
+  &__header {
+    margin-bottom: calc(var(--offset)*4);
+  }
+
+  &__work {
+    width: calc(var(--offset) * 40);
+    height: calc(var(--offset) * 40);
+    background-size: cover;
+  }
+}
+
+.container {
+  img {
+    margin: calc(var(--offset)*2);
+  }
+}
