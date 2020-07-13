@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amx-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--offset) var(--offset);
+  width: 100%;
+  height: calc(var(--offset) * 20);
+  background-color: var(--menu-background-color);
+
+  //box-shadow: 0 -8px 16px rgba(75, 75, 75, 0.2);
+
+  margin-top: calc(var(--offset) * 4);
+
+  &__block {
+
+
+    display: flex;
+  }
+
+  &__link {
+
+    &:not(:last-child) {
+      margin-right: calc(var(--offset) * 2);
+    }
+  }
+}

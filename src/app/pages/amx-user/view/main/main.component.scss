@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+.amx-logo {
+  background-image: url("./../../../../../assets/img/logo8.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 19em;
+  height: 6em;
+
+  margin-top: calc(var(--offset) * 4);
+  margin-bottom: calc(var(--offset) * 4);
+}
+
+.amx-main-text {
+  width: 19em;
+  p {
+    line-height: calc(var(--font-size) * 1.5);
+    &:not(:last-child) {
+      margin-bottom: calc(var(--offset) * 4);
+    }
+  }
+}

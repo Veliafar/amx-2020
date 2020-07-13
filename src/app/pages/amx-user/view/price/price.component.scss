@@ -1,0 +1,77 @@
+
+.amx-main-price {
+  &__fast-way {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--offset)*4);
+    padding-bottom: calc(var(--offset)*4);
+    border-radius: var(--border-radius);
+
+    backdrop-filter: blur(10px);
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-wrap: wrap;
+
+    }
+
+    li {
+      list-style: none;
+
+      //margin-bottom: calc(var(--offset) * 4);
+
+      &:not(:last-child) {
+        margin-right: calc(var(--offset)*4);
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+
+      border-radius: var(--border-radius);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    //border: 1px solid var(--color);
+    border-radius: var(--border-radius);
+
+    background-color: var(--solid-overlay-background-color);
+    width: 100%;
+    span {
+
+      &:nth-child(odd) {
+        text-align: right;
+      }
+
+      &:nth-child(even) {
+        text-align: left;
+      }
+
+      padding: calc(var(--offset)) calc(var(--offset)*4);
+    }
+
+
+    &:not(:last-child) {
+      margin-bottom: calc(var(--offset) * 4);
+    }
+    &:last-child {
+      margin-bottom: calc(var(--offset) * 16);
+    }
+  }
+
+  &__header {
+    margin-bottom: calc(var(--offset) * 2);
+
+
+  }
+}
+
+

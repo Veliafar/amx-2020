@@ -1,0 +1,29 @@
+.amx-contact {
+  &__map {
+
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(var(--offset) * 4);
+  }
+
+  &__address {
+    margin-bottom: calc(var(--offset) * 4);
+  }
+
+  &__extra {
+    width: 19em;
+    span {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: calc(var(--offset) * 2);
+      }
+    }
+
+    margin-bottom: calc(var(--offset) * 4);
+  }
+}

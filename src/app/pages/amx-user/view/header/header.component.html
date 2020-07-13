@@ -1,0 +1,19 @@
+<nav class="amx-header">
+  <ul class="amx-header__block">
+    <li class="amx-header__link amx-link" *ngFor="let item of menu" [routerLinkActive]="linkActiveClass"
+       [routerLink]="[item.link]">
+      {{ item.title }}
+    </li>
+  </ul>
+  <div class="amx-header__info">
+    <div class="amx-header__phone">
+      <a class="amx-phone" href="tel:+7903133-02-00">+7 (903) 133-02-00</a>
+    </div>
+    <div class="amx-header__instagram">
+      <a class="amx-phone" href="https://www.instagram.com/sav_7.1.prod">
+        <div class="amx-instagram-logo"></div>sav_7.1.prod
+      </a>
+    </div>
+  </div>
+</nav>
+
