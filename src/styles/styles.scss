@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+:root {
+
+  --offset: 8px;
+  --border-radius: 8px;
+  --menu-background-color: rgba(40, 40, 40, 0.5);
+  --footer-background-color: rgba(40, 40, 40, 0.7);
+  --overlay-background-color: rgba(22, 22, 22, 0.3);
+  --solid-overlay-background-color: rgba(22, 22, 22, 0.8);
+  --color: #f7b448;
+  --active-color: #c7861e;
+  --content-color: #ababab;
+  --font-size: 24px;
+  --header-width: 600px;
+
+  ::-webkit-scrollbar {
+    height: calc(var(--offset));
+    width: calc(var(--offset));
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: calc(var(--offset) * 2);
+    background-color: var(--color);
+  }
+
+  @media screen and (max-width: 1024px) {
+    --font-size: 20px;
+    --header-width: 400px;
+    --offset: 6px;
+    --border-radius: 6px;
+  }
+  @media screen and (max-width: 640px) {
+    --font-size: 16px;
+    --header-width: 310px;
+    --offset: 4px;
+    --border-radius: 4px;
+  }
+
+  @import './variables.scss';
+  @import './content.scss';
+  @import './link.scss';
+}

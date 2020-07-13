@@ -1,0 +1,46 @@
+.amx-link {
+  display: block;
+
+
+  background-color: var(--overlay-background-color);
+  padding: calc(var(--offset));
+  border-radius: var(--border-radius);
+  cursor: pointer;
+
+
+  color: var(--active-color);
+  list-style: none;
+  font-size: var(--font-size);
+
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    background-color: rgba(22, 22, 22, 1);
+
+  }
+
+  &:active,
+  &.active {
+    background-color: var(--solid-overlay-background-color);
+    color: var(--color);
+  }
+}
+
+.amx-phone {
+  display: flex;
+  align-items: center;
+
+  color: var(--color);
+  font-size: var(--font-size);
+  text-decoration: none;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active,
+  &.active {
+    color: var(--color);
+  }
+}

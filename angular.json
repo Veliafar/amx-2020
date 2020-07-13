@@ -7,10 +7,11 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "amx",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "spec": false
         }
       },
       "architect": {
@@ -27,10 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles/variables"
+              ]
+            },
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -84,8 +89,13 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles/variables"
+              ]
+            },
             "scripts": [],
             "assets": [
               "src/favicon.ico",
